@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Team-Axcel</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
     <div class="Container">
@@ -28,8 +29,10 @@
         
           @RenderBody()
 </div>
-    <footer>
-
-    </footer>
+    <nav class="navbar-default navbar navbar-fixed-bottom">
+        <footer class="container-fluid" id="footer">
+            <span id="FooterContent" class="navbar-brand">(c) 2016 Team-Axcel.</span>
+        </footer>
+    </nav>
 </body>
 </html>
