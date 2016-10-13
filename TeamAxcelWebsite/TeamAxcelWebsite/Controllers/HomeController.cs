@@ -13,5 +13,13 @@ namespace TeamAxcelWebsite.Controllers
         {
             return View();
         }
+        public ActionResult About()
+        {
+            return View();
+        }
+        public ActionResult Gallery()
+        {
+            return View();
+        }
     }
 }
