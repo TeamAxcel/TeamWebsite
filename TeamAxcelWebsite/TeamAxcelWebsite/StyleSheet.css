@@ -1,9 +1,13 @@
 ﻿body {
+    background-image: url("TempBackground.jpg");
+    background-size: 100%, 100%;
 }
+
 .rcorners1 {
     border-radius: 35px;
     background: #73AD21;
+    #FooterContent;
 
-#FooterContent{
+{
     font-size: 12px;
 }
