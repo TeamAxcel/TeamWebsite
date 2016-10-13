@@ -1,6 +1,11 @@
 ﻿body {
 }
 
-#FooterContent{
+.rcorners1 {
+    border-radius: 35px;
+    background: #73AD21;
+    #FooterContent;
+
+{
     font-size: 12px;
 }
