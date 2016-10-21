@@ -6,36 +6,46 @@
     <title>@ViewBag.Title</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/StyleSheet1.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
 </head>
 <body>
    <div class="Container">
         <nav class="navbar navbar-inverse navbar-static-top">
             <div class="container-fluid">
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <!--Maybe have logo here?-->
                     <span class="navbar-brand">Team Axcel</span>
                 </div>
                 
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/Home/About">About</a></li>
-                    <li><a href="/Home/Gallery">Gallery</a></li>
-                </ul>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/Home/About">About</a></li>
+                        <li><a href="/Home/Gallery">Gallery</a></li>
+                        <li><a href="/Home/Contact">Contact</a></li>
+                    </ul>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/">Github</a></li>
-                </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/">Github</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
-    <nav class="navbar-inverse navbar navbar-fixed-bottom" id="footer">
-        <footer class="container-fluid" id="footer">
-            <span id="FooterContent" class="navbar-brand">(c) 2016 Team-Axcel.</span>
+    
+    @RenderBody()
+
+    <nav class="navbar-inverse navbar navbar-fixed-bottom">
+        <footer class="container-fluid">
+            <span class="navbar-brand">(c) 2016 Team-Axcel.</span>
         </footer>
     </nav>
-    @RenderBody()
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
 </html>
 
