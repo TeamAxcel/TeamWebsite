@@ -125,6 +125,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Pictures\Autumn.jpeg" />
+    <Content Include="Pictures\Axcel-Loga3.png" />
     <Content Include="Pictures\axcel-loga5.png" />
     <Content Include="Pictures\Paraflax.jpg" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
