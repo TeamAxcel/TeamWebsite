@@ -124,11 +124,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Pictures\12341616_128283547540040_6241809241481258123_n.jpg" />
+    <Content Include="Pictures\Autumn.jpeg" />
     <Content Include="Pictures\axcel-loga5.png" />
-    <Content Include="Pictures\win_20161012_15_35_35_pro.jpg" />
-    <Content Include="Pictures\win_20161013_12_45_08_pro_480.jpg" />
-    <Content Include="Pictures\win_20161013_12_51_26_pro_480.jpg" />
+    <Content Include="Pictures\Paraflax.jpg" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
