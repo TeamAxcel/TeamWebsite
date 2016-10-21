@@ -1,12 +1,7 @@
 ﻿body {
-    background-image: url('Pictures/Autumn.jpeg');
+    background: url('Pictures/Autumn.jpeg') no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-#footer{
-    opacity: 0.7;
-    
 }
 
 #index {    
@@ -14,4 +9,10 @@
     background-color:  #EAC67A;
     padding: 3%;
     border-radius: 4px;
+    font-size: 20px;
+}
+
+#Logo{
+    height: 30px;
+    width: 50px;
 }
