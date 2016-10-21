@@ -1,5 +1,5 @@
 ﻿body {
-    background: url('Pictures/Autumn.jpeg') no-repeat center center fixed;
+    background: url('Pictures/Autumn.jpeg') no-repeat center fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -8,6 +8,6 @@
     opacity: 0.9;
     background-color:  #EAC67A;
     padding: 3%;
-    border-radius: 4px;
-    font-size: 20px;
+    border-radius: 0.5%;
+    font-size: large;
 }
