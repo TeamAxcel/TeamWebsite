@@ -8,6 +8,13 @@ namespace OrganisationWebsite.Controllers
 {
     public class HomeController : Controller
     {
+        WebsiteDBEntities DB;
+
+        public HomeController()
+        {
+            DB = new WebsiteDBEntities();
+        }
+
         // GET: Home
         public ActionResult Index()
         {
