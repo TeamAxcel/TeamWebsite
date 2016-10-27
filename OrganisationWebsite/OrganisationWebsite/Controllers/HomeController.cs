@@ -33,5 +33,10 @@ namespace OrganisationWebsite.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
     }
 }
