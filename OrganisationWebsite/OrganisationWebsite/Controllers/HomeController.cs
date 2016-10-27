@@ -39,9 +39,10 @@ namespace OrganisationWebsite.Controllers
             return View();
         }
 
-        public ActionResult ListOrgEndMember()
+
+        public ActionResult ListOrgEndMember(organisations organisation)
         {
-            return View();
+            return View(organisation);
         }
     }
 }
