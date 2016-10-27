@@ -17,13 +17,13 @@ namespace OrganisationWebsite.Controllers
 
         // GET: Home
         [HttpGet]
-        public ActionResult Index()
+        public ActionResult RegOrg()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult Index(organisations organisation)
+        public ActionResult RegOrg(organisations organisation)
         {
             if (ModelState.IsValid)
             {
