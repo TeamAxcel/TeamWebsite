@@ -38,5 +38,10 @@ namespace OrganisationWebsite.Controllers
         {
             return View();
         }
+
+        public ActionResult ListOrgEndMember()
+        {
+            return View();
+        }
     }
 }
