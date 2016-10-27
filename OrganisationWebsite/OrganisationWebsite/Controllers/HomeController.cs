@@ -19,15 +19,16 @@ namespace OrganisationWebsite.Controllers
         [HttpGet]
         public ActionResult RegOrg()
         {
-            return View();
+            organisations org = new organisations();
+            return View(org);
         }
 
         [HttpPost]
-        public ActionResult RegOrg(organisations organisation)
+        public ActionResult RegOrg(organisations org)
         {
             if (ModelState.IsValid)
             {
-                DB.organisations.Add(organisation);
+                DB.organisations.Add(org);
                 DB.SaveChanges();
             }
 
