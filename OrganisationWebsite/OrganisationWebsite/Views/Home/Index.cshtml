@@ -1,9 +1,10 @@
-﻿
+﻿@model organisations
+
 @{
     ViewBag.Title = "Index";
 }
 
-<div class="container">
+@*<div class="container">
     <div class="row main">
         <div class="panel-heading">
             <div class="panel-title text-center">
@@ -50,13 +51,39 @@
                         </div>
                     </div>
                 </div>
-               
                 <div class="form-group ">
                     <button type="button" class="btn btn-primary btn-lg btn-block login-button">Register</button>
                 </div>
-
             </form>
         </div>
     </div>
-</div>
+</div>*@
 
+@using (Html.BeginForm())
+{
+    <div class="container">
+        <div class="row main">
+            <div class="panel-heading">
+                <div class="panel-title text-center">
+                    <h1 class="title">Register Organisation</h1>
+                    <hr />
+                </div>
+            </div>
+            <div class="main-login main-center">
+                <form class="form-horizontal" method="post" name="registerOrg">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                @Html.TextBoxFor(m => m.name)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block login-button" onclick="validateForm('registerOrg')">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}

@@ -16,9 +16,22 @@ namespace OrganisationWebsite.Controllers
         }
 
         // GET: Home
+        [HttpGet]
         public ActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Index(organisations organisation)
+        {
+            if (ModelState.IsValid)
+            {
+                DB.organisations.Add(organisation);
+                DB.SaveChanges();
+            }
+
+            return RedirectToAction("Index");
         }
     }
 }
