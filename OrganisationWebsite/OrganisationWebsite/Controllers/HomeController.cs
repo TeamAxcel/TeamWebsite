@@ -35,6 +35,25 @@ namespace OrganisationWebsite.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public ActionResult RegMember()
+        {
+            members memb = new members();
+            return View(memb);
+        }
+
+        [HttpPost]
+        public ActionResult RegMember(members memb)
+        {
+            if (ModelState.IsValid)
+            {
+                DB.members.Add(memb);
+                DB.SaveChanges();
+            }
+
+            return RedirectToAction("Index");
+        }
+
         public ActionResult Index()
         {
             return View();
