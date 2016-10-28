@@ -60,9 +60,15 @@ namespace OrganisationWebsite.Controllers
         }
 
 
-        public ActionResult ListOrgEndMember(organisations organisation)
+        public ActionResult ListOrgEndMember()
         {
-            return View(organisation);
+
+            organisations organisation = new organisations();
+            members members = new members();
+            System.Collections.ArrayList DBLists = new System.Collections.ArrayList();
+            DBLists.Add(organisation);
+            DBLists.Add(members);
+            return View(DBLists);
         }
     }
 }
