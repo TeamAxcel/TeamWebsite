@@ -1,4 +1,4 @@
-﻿@model members
+﻿@model OrganisationWebsite.Models.RegMemberViewModel
 
 @{
     ViewBag.Title = "RegMember";
@@ -19,7 +19,7 @@
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                            @Html.TextBoxFor(m => m.Name)
+                            @Html.TextBoxFor(m => m.member.Name)
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                            @Html.TextBoxFor(m => m.Adress)
+                            @Html.TextBoxFor(m => m.member.Adress)
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                            @Html.TextBoxFor(m => m.Phone)
+                            @Html.TextBoxFor(m => m.member.Phone)
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                            @Html.TextBoxFor(m => m.Organisation)
+                            @Html.DropDownListFor(m => m.member.Organisation, new SelectList(Model.orgs, "Id", "name"))
                         </div>
                     </div>
                 </div>
