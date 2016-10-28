@@ -62,12 +62,12 @@ namespace OrganisationWebsite.Controllers
 
         public ActionResult ListOrgEndMember()
         {
-
+            
             organisations organisation = new organisations();
             members members = new members();
             System.Collections.ArrayList DBLists = new System.Collections.ArrayList();
-            DBLists.Add(organisation);
-            DBLists.Add(members);
+            DBLists.Add(DB.organisations.ToList());
+            DBLists.Add(DB.members.ToList());
             return View(DBLists);
         }
     }
