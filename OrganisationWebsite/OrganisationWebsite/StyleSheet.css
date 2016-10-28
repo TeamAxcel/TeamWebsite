@@ -60,14 +60,10 @@ input::-webkit-input-placeholder {
 }
 
 .btn-xlarge {
-    padding: 64px 104px;
-    font-size: 22px; /*change this to your desired size*/
+    padding: 64px 52px;
+    font-size: 22px;
     line-height: normal;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-}
-
-.ol-md-4 {
-    background-color: grey;
 }
