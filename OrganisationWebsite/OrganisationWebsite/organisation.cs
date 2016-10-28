@@ -12,7 +12,7 @@ namespace OrganisationWebsite
     using System;
     using System.Collections.Generic;
     
-    public partial class organisations
+    public partial class organisation
     {
         public int Id { get; set; }
         public string name { get; set; }

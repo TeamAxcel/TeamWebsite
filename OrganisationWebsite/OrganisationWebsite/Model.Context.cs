@@ -25,7 +25,7 @@ namespace OrganisationWebsite
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<members> members { get; set; }
-        public virtual DbSet<organisations> organisations { get; set; }
+        public virtual DbSet<member> members { get; set; }
+        public virtual DbSet<organisation> organisations { get; set; }
     }
 }
