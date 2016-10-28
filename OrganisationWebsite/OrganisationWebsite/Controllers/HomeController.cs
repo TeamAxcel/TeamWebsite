@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using OrganisationWebsite.Models;
 
 namespace OrganisationWebsite.Controllers
 {
@@ -38,16 +39,17 @@ namespace OrganisationWebsite.Controllers
         [HttpGet]
         public ActionResult RegMember()
         {
-            members memb = new members();
-            return View(memb);
+            RegMemberViewModel model = new RegMemberViewModel(DB.organisations.ToList());
+            return View(model);
         }
 
         [HttpPost]
-        public ActionResult RegMember(members memb)
+        public ActionResult RegMember(RegMemberViewModel model)
         {
             if (ModelState.IsValid)
             {
-                DB.members.Add(memb);
+                members member = model.member;
+                DB.members.Add(member);
                 DB.SaveChanges();
             }
 
