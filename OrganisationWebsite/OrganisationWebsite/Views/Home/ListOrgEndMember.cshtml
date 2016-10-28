@@ -6,9 +6,9 @@
 }
 
 <div class="list-group">
-    @foreach (var item in ((List<organisations>)Model[0]))
+    @foreach (var item in ((List<organisation>)Model[0]))
         {
-        organisations org = (organisations)item;
+        organisation org = (organisation)item;
         <a href="#" class="list-group-item">
             @org.name
         </a>

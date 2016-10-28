@@ -20,16 +20,16 @@ namespace OrganisationWebsite.Controllers
         [HttpGet]
         public ActionResult RegOrg()
         {
-            organisations org = new organisations();
+            organisation org = new organisation();
             return View(org);
         }
 
         [HttpPost]
-        public ActionResult RegOrg(organisations org)
+        public ActionResult RegOrg( organisation regorg)
         {
             if (ModelState.IsValid)
             {
-                DB.organisations.Add(org);
+                DB.organisations.Add(regorg);
                 DB.SaveChanges();
             }
 
@@ -48,7 +48,7 @@ namespace OrganisationWebsite.Controllers
         {
             if (ModelState.IsValid)
             {
-                members member = model.member;
+                member member = model.member;
                 DB.members.Add(member);
                 DB.SaveChanges();
             }
@@ -64,9 +64,6 @@ namespace OrganisationWebsite.Controllers
 
         public ActionResult ListOrgEndMember()
         {
-            
-            organisations organisation = new organisations();
-            members members = new members();
             System.Collections.ArrayList DBLists = new System.Collections.ArrayList();
             DBLists.Add(DB.organisations.ToList());
             DBLists.Add(DB.members.ToList());
