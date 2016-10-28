@@ -6,11 +6,25 @@
 }
 
 <div class="list-group">
-    @foreach (var item in ((List<organisation>)Model[0]))
+    <h3>Organitationer:</h3>
+    @foreach (var item in ((List<organisation>
+        )Model[0]))
         {
         organisation org = (organisation)item;
         <a href="#" class="list-group-item">
             @org.name
+        </a>
+        }
+</div>
+<div class="list-group">
+    <h3>Medlemar:</h3>
+    @foreach (var item in ((List<member>
+        )Model[1]))
+        {
+        member mem = (member)item;
+        <a href="#" class="list-group-item">
+            @mem.Name
+            @mem.Organisation
         </a>
         }
 </div>
