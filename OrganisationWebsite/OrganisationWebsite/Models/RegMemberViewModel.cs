@@ -7,28 +7,28 @@ namespace OrganisationWebsite.Models
 {
     public class RegMemberViewModel
     {
-        public List<organisations> orgs { get; set; }
-        public members member { get; set; }
+        public List<organisation> orgs { get; set; }
+        public member member { get; set; }
 
         public RegMemberViewModel()
         {
-            orgs = new List<organisations>();
-            member = new members();
+            orgs = new List<organisation>();
+            member = new member();
         }
 
-        public RegMemberViewModel(List<organisations> orgs)
+        public RegMemberViewModel(List<organisation> orgs)
         {
             this.orgs = orgs;
-            member = new members();
+            member = new member();
         }
 
-        public RegMemberViewModel(members member)
+        public RegMemberViewModel(member member)
         {
-            orgs = new List<organisations>();
+            orgs = new List<organisation>();
             this.member = member;
         }
 
-        public RegMemberViewModel(List<organisations> org, members member)
+        public RegMemberViewModel(List<organisation> org, member member)
         {
             this.orgs = orgs;
             this.member = member;
