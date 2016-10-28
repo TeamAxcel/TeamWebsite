@@ -25,7 +25,7 @@ namespace OrganisationWebsite.Controllers
         }
 
         [HttpPost]
-        public ActionResult RegOrg( organisation regorg)
+        public ActionResult RegOrg(organisation regorg)
         {
             if (ModelState.IsValid)
             {
