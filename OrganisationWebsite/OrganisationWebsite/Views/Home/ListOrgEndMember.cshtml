@@ -1,6 +1,11 @@
-﻿@modle organisation
+﻿@modle organisation.ViewModels.IndexViewModel
+
+
 @{
     ViewBag.Title = "ListOrgEndMember";
 }
 
-<h2>ListOrgEndMember</h2>
+@foreach (var item in Model.organisation)
+{
+    <li>@item.name @item.id</li>
+}
