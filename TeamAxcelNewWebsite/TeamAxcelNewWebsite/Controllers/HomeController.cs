@@ -13,7 +13,7 @@ namespace TeamAxcelNewWebsite.Controllers
         {
             return View();
         }
-        public ActionResult TheTeam()
+        public ActionResult Team()
         {
             return View();
         }
