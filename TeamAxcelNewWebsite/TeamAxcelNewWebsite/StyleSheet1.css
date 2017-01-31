@@ -1,58 +1,44 @@
 ﻿body {
-    background: url('Pictures/Autumn.jpeg') no-repeat center fixed;
+    background-color: #F5F5F5;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #index {    
     opacity: 0.9;
-    background-color:  #EAC67A;
     padding: 3%;
     border-radius: 4px;
     font-size: 20px;
-}
-
-#Logo{
-    height: 30px;
-    width: 50px;
 }
 
 #accordion {    
     opacity: 0.9;
-    background-color:  #984B43;
     padding: 3%;
     border-radius: 4px;
     font-size: 20px;
 }
 
-.thumbnail {
-    background-color:  #EAC67A;
+p {
+    font-family: "brandon-grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-#gallery_jumbotron1 {
-    background-color:  #EAC67A;
+@media screen and (min-width: 768px) {
+    .HOD {
+        display: none;
+    }
 }
 
-#gallery_jumbotron2 {
-    background-color:  #EAC67A;
+@media screen and (max-width: 768px) {
+    .HOM {
+        display: none;
+    }
 }
 
-#collapse1 {
-    background-color:  #EAC67A;
+#logo {
+    width: 50px;
+    heigt: 30px;
 }
 
-#collapse2 {
-    background-color:  #EAC67A;
-}
-
-#collapse3 {
-    background-color:  #EAC67A;
-}
-
-#collapse4 {
-    background-color:  #EAC67A;
-}
-
-#collapse5 {
-    background-color:  #EAC67A;
+.header{
+    padding-left: 47px;
 }

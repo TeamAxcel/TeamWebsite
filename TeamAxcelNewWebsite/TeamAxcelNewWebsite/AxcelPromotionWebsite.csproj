@@ -152,8 +152,8 @@
     <Content Include="Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Gallery.cshtml" />
+    <Content Include="Views\Home\Portfolio.cshtml" />
+    <Content Include="Views\Home\Team.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
