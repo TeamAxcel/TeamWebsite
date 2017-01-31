@@ -124,10 +124,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Pictures\Autumn.jpeg" />
-    <Content Include="Pictures\Axcel-Loga3.png" />
     <Content Include="Pictures\axcel-loga5.png" />
-    <Content Include="Pictures\Paraflax.jpg" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -152,7 +149,6 @@
     <Content Include="Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Portfolio.cshtml" />
     <Content Include="Views\Home\Team.cshtml" />
   </ItemGroup>
   <ItemGroup>
