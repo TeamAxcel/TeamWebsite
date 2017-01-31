@@ -1,5 +1,5 @@
 ﻿body {
-    
+    background-color: #F5F5F5;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -23,34 +23,6 @@
     font-size: 20px;
 }
 
-.thumbnail {
-
-}
-
-#gallery_jumbotron1 {
-
-}
-
-#gallery_jumbotron2 {
-;
-}
-
-#collapse1 {
-
-}
-
-#collapse2 {
-
-}
-
-#collapse3 {
-
-}
-
-#collapse4 {
-
-}
-
-#collapse5 {
-
+p {
+    font-family: "brandon-grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
