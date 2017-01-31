@@ -13,15 +13,11 @@ namespace TeamAxcelNewWebsite.Controllers
         {
             return View();
         }
-        public ActionResult About()
+        public ActionResult TheTeam()
         {
             return View();
         }
-        public ActionResult Contact()
-        {
-            return View();
-        }
-        public ActionResult Gallery()
+        public ActionResult Portfolio()
         {
             return View();
         }
